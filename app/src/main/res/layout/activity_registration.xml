@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegistrationActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -27,8 +28,8 @@
         android:layout_width="144dp"
         android:layout_height="46dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="First Name"
+        android:inputType="text"
+        android:hint="First Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
@@ -41,8 +42,8 @@
         android:layout_width="164dp"
         android:layout_height="44dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Last Name"
+        android:inputType="text"
+        android:hint="Last Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.866"
@@ -52,16 +53,17 @@
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="234dp"
+        android:layout_height="44dp"
         android:ems="10"
+        android:hint="Enter Phone Number"
         android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.392" />
+        app:layout_constraintVertical_bias="0.384" />
 
     <EditText
         android:id="@+id/editTextDate"
@@ -69,7 +71,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="date"
-        android:text="DOB:"
+        android:hint="Date of Birth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
@@ -82,7 +84,7 @@
         android:layout_height="45dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="Email:"
+        android:hint="Enter your Email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.363"
@@ -90,59 +92,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.607" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Female"
-        android:textSize="25sp"
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="343dp"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.806" />
+        app:layout_constraintVertical_bias="0.823">
+        <RadioButton
+            android:id="@+id/radioBtn1"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="Male" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Male"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.752"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.806" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="58dp"
-        android:layout_height="36dp"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807" />
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="62dp"
-        android:layout_height="41dp"
-        android:text=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="561dp" />
+        <RadioButton
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="207dp"
-        android:layout_height="36dp"
+        android:layout_width="367dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:hint="Enter a new password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.71"
@@ -150,18 +129,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.71" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="112dp"
-        android:layout_height="38dp"
-        android:text="Password"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.712" />
 
     <Button
         android:id="@+id/button"
@@ -169,25 +136,12 @@
         android:layout_height="41dp"
         android:backgroundTint="#ff0000"
         android:text="Click Register"
+        android:onClick="findDoctor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.936" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="114dp"
-        android:layout_height="42dp"
-        android:text="Phone Number: "
-        android:textSize="15dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
