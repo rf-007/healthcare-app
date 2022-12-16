@@ -17,7 +17,7 @@
         android:theme="@style/Theme.HealthcareApp"
         tools:targetApi="31">
         <activity
-            android:name=".Search_Doctor"
+            android:name=".SearchDoctorActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
