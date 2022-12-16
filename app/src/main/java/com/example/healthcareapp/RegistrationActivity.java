@@ -33,7 +33,7 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     public void findDoctor(View view) {
-        startActivity(new Intent(RegistrationActivity.this, FindDoctorActivity.class));
+        startActivity(new Intent(RegistrationActivity.this, SearchDoctorActivity.class));
     }
 
 }

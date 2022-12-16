@@ -7,18 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".SearchDoctorActivity"
     android:orientation="vertical"
-    android:padding="8dp"
-    android:background="@color/black"
+    android:padding="20dp"
+    android:background="@color/white"
     android:gravity="center" >
+
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Health Care"
+        android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="italic"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -26,8 +28,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.053" />
 
-
-<LinearLayout
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"/>
