@@ -51,7 +51,7 @@
         android:layout_width="345dp"
         android:layout_height="53dp"
         android:onClick="toLogin"
-        android:text="Login"
+        android:text="Get Started"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
