@@ -8,10 +8,10 @@
     android:background="@drawable/bg_gradient">
 
     <TextView
-        android:id="@+id/textViewDDName"
+        android:id="@+id/textViewDenName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="List of Doctors"
+        android:text="List of Dentists"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -23,7 +23,7 @@
 
 
     <ListView
-        android:id="@+id/listViewDD"
+        android:id="@+id/listViewDen"
         android:layout_width="wrap_content"
         android:layout_height="500dp"
         android:layout_margin="10dp"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonDDBack"
+        android:id="@+id/buttonDenBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
@@ -47,13 +47,23 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonDDFind"
+        android:id="@+id/buttonDenFind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
-        android:text="FIND"
+        android:text="BOOK APPOINTMENT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <SearchView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDenName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
