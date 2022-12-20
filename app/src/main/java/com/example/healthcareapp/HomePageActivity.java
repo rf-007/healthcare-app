@@ -21,4 +21,12 @@ public class HomePageActivity extends AppCompatActivity {
     public void bookAppointmentOnClick(View view) {
         startActivity(new Intent(HomePageActivity.this, BookAppointment.class));
     }
+
+    public void buyMedsOnClick(View view) {
+        startActivity(new Intent(HomePageActivity.this, BuyMedicineActivity.class));
+    }
+
+    public void ordDetsOnClick(View view) {
+        startActivity(new Intent(HomePageActivity.this, OrderDetailActivity.class));
+    }
 }
