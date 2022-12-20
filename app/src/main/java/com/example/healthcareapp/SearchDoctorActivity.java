@@ -23,16 +23,4 @@ public class SearchDoctorActivity extends AppCompatActivity {
     public void cardioOnClick(View view) {
         startActivity(new Intent(SearchDoctorActivity.this, CardioDocActivity.class));
     }
-
-    public void denOnClick(View view) {
-        startActivity(new Intent(SearchDoctorActivity.this, DentistActivity.class));
-    }
-
-    public void dietOnClick(View view) {
-        startActivity(new Intent(SearchDoctorActivity.this, DietActivity.class));
-    }
-
-    public void famDocOnClick(View view) {
-        startActivity(new Intent(SearchDoctorActivity.this, FamDocActivity.class));
-    }
 }
