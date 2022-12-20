@@ -19,8 +19,12 @@ public class SearchDoctorActivity extends AppCompatActivity {
         setContentView(activitySearchDoctorBinding.getRoot());
     }
 
-
     public void cardioOnClick(View view) {
         startActivity(new Intent(SearchDoctorActivity.this, CardioDocActivity.class));
+    }
+
+
+    public void dentistOnClick(View view) {
+        startActivity(new Intent(SearchDoctorActivity.this, DentistActivity.class));
     }
 }
