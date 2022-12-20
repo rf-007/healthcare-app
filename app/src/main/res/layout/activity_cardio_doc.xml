@@ -22,31 +22,6 @@
         app:layout_constraintVertical_bias="0.045" />
 
 
-    <EditText
-        android:id="@+id/doctorsName"
-        android:layout_width="408dp"
-        android:layout_height="41dp"
-        android:hint="Doctors Name"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="150dp" />
-
-
-    <EditText
-        android:id="@+id/specialist"
-        android:layout_width="408dp"
-        android:layout_height="41dp"
-        android:hint="Specialist"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="202dp" />
-
-    <EditText
-        android:id="@+id/schedule"
-        android:layout_width="396dp"
-        android:layout_height="40dp"
-        android:hint="Schedule"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="262dp" />
-
     <ListView
         android:id="@+id/lvCardio"
         android:layout_width="378dp"
@@ -57,23 +32,23 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777" />
-
+        app:layout_constraintVertical_bias="0.512" />
 
     <Button
         android:id="@+id/buttonCardioFind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BOOK APPOINTMENT"
+        android:onClick="bookappointOnClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintVertical_bias="0.894" />
 
     <SearchView
         android:id="@+id/searchView"
