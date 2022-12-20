@@ -15,7 +15,7 @@ public class AptDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase AptDB) {
-        AptDB.execSQL("create table appointment(fullName TEXT primary key, address TEXT, phoneNumber TEXT, fees_1 TEXT, date TEXT, time TEXT)");
+        AptDB.execSQL("create table appointment(fullName TEXT primary key, address TEXT, phoneNumber TEXT, date TEXT, time TEXT)");
     }
 
     @Override
@@ -23,13 +23,12 @@ public class AptDBHelper extends SQLiteOpenHelper {
         AptDB.execSQL("drop Table if exists appointment");
     }
 
-    public Boolean insertAppointment(String fullName, String address, String phoneNumber, String fees_1, String date, String time){
+    public Boolean insertAppointment(String fullName, String address, String phoneNumber, String date, String time){
         SQLiteDatabase AptDB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("fullName", fullName);
         contentValues.put("address", address);
         contentValues.put("phoneNumber", phoneNumber);
-        contentValues.put("fees", fees_1);
         contentValues.put("date", date);
         contentValues.put("time", time);
         long res = AptDB.insert("appointment", null, contentValues);

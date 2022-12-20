@@ -32,7 +32,6 @@ public class BookAppointment extends AppCompatActivity {
         address = (EditText) findViewById(R.id.address);
         date = (EditText) findViewById(R.id.date);
         time = (EditText) findViewById(R.id.time);
-
         button_registration = (Button) findViewById(R.id.button_registration);
         aptDBHelper =  new AptDBHelper (this);
 
@@ -44,10 +43,10 @@ public class BookAppointment extends AppCompatActivity {
                 String phone = phoneNumber.getText().toString();
                 String email = address.getText().toString();
                 String Dob = date.getText().toString();
-                String Tn = time.getText().toString();
+                String Tm = time.getText().toString();
 
 
-                if(name.equals("") || phone.equals("") || email.equals("") || Dob.equals("") || Tn.equals("")) {
+                if(name.equals("") || phone.equals("") || email.equals("") || Dob.equals("") || Tm.equals("")) {
                     Toast.makeText(BookAppointment.this, "Enter all the values in the field", Toast.LENGTH_SHORT).show();
                 }
 
@@ -56,7 +55,7 @@ public class BookAppointment extends AppCompatActivity {
                     Boolean ress = aptDBHelper.aptverify(name);
                     if(ress == false)
                     {
-                        Boolean res = aptDBHelper.insertAppointment(name,phone,email,Dob,Tn);
+                        Boolean res = aptDBHelper.insertAppointment(name,phone,email,Dob,Tm);
                         if(res==true)
                         {
                             Toast.makeText(BookAppointment.this,"Booking appointment Successful!", Toast.LENGTH_SHORT).show();
@@ -65,19 +64,16 @@ public class BookAppointment extends AppCompatActivity {
                         }
                         else
                         {
-                            Toast.makeText(BookAppointment.this,"Sorry, BookAppointment Failed. Please Try Again", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(BookAppointment.this,"Sorry, Booking Appointment Failed. Please Try Again", Toast.LENGTH_SHORT).show();
                         }
                     }
                     else{
-
+                        Toast.makeText(getApplicationContext(), "Booking already exists!", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(getApplicationContext(), HomePageActivity.class);
                         startActivity(intent);
                     }
                 }
             }
-
-
-
 
         });
 
