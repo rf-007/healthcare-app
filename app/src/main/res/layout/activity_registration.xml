@@ -24,54 +24,39 @@
         app:layout_constraintVertical_bias="0.119" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="144dp"
-        android:layout_height="46dp"
+        android:id="@+id/nameFull"
+        android:layout_width="409dp"
+        android:layout_height="49dp"
         android:ems="10"
+        android:hint="Full Name"
         android:inputType="text"
-        android:hint="First Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.254" />
+        app:layout_constraintVertical_bias="0.253" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="164dp"
-        android:layout_height="44dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Last Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.866"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
-
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="234dp"
-        android:layout_height="44dp"
+        android:id="@+id/phoneNum"
+        android:layout_width="406dp"
+        android:layout_height="51dp"
         android:ems="10"
         android:hint="Enter Phone Number"
         android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.384" />
 
     <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/dob"
+        android:layout_width="400dp"
+        android:layout_height="51dp"
         android:ems="10"
-        android:inputType="date"
-        android:hint="Date of Birth"
+        android:hint="Date of Birth: dd/mm/yy"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
@@ -79,12 +64,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="367dp"
-        android:layout_height="45dp"
+        android:id="@+id/emailAdd"
+        android:layout_width="410dp"
+        android:layout_height="43dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
         android:hint="Enter your Email"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.363"
@@ -92,56 +77,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.607" />
 
-    <RadioGroup
-        android:id="@+id/radioGrp"
-        android:layout_width="343dp"
-        android:layout_height="54dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823">
-        <RadioButton
-            android:id="@+id/radioBtn1"
-            android:layout_width="183dp"
-            android:layout_height="wrap_content"
-            android:text="Male" />
-
-        <RadioButton
-            android:layout_width="173dp"
-            android:layout_height="wrap_content"
-            android:text="Female" />
-    </RadioGroup>
-
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="367dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:hint="Enter a new password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.709" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonBtn"
         android:layout_width="238dp"
         android:layout_height="41dp"
         android:backgroundTint="#ff0000"
-        android:text="Click Register"
         android:onClick="findDoctor"
+        android:text="Click Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        app:layout_constraintVertical_bias="0.875" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
