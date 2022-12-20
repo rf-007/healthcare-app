@@ -11,6 +11,7 @@ import com.example.healthcareapp.databinding.ActivityBookAppointmentBinding;
 
 public class BookAppointment extends AppCompatActivity {
     ActivityBookAppointmentBinding activityBookAppointmentBinding;
+    AptDBHelper aptDBHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
